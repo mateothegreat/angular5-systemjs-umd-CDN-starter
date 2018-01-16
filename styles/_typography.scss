@@ -1,0 +1,48 @@
+html {
+    font-size: 14px;
+    //font-family    : 'Numito', 'Roboto', 'Helvetica Neue', 'Arial', sans-serif;
+    font-family: "Open Sans", "Arial", sans-serif;
+    line-height: 1.4 !important;
+    letter-spacing: -0.1px !important;
+}
+
+body {
+    font-size: 14px;
+}
+
+html,
+body {
+    -webkit-font-smoothing: auto;
+    -moz-osx-font-smoothing: auto;
+}
+
+// Boxed text
+.text-boxed {
+    border-radius: 2px;
+    padding: 4px 8px;
+    margin: 0 8px;
+    font-size: 11px;
+    font-weight: 500;
+    color: rgba(0, 0, 0, 0.54);
+    background-color: rgba(0, 0, 0, 0.12);
+    white-space: nowrap;
+}
+
+// Boxed text light
+.text-boxed-light {
+    @extend .text-boxed;
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+// Truncate
+.text-truncate {
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+// Nowrap
+.text-nowrap {
+    white-space: nowrap;
+}

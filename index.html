@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    
+    <title>Angular 5+ Systemjs QuickStart</title>
+    
+    <base href="/">
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://unpkg.com/@angular/material@5.0.4/prebuilt-themes/deeppurple-amber.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/styles.processed.css">
+
+    <script src="https://unpkg.com/core-js/client/shim.min.js"></script>
+    <script src="https://unpkg.com/zone.js/dist/zone.js"></script>
+    <script src="https://unpkg.com/reflect-metadata/Reflect.js"></script>
+    <script src="https://unpkg.com/systemjs/dist/system.src.js"></script>
+
+    <script src="systemjs.config.js"></script>
+
+    <script>
+    
+        System.import('main.processed.js').catch(function(err) {
+        
+            console.error(err);
+        
+        });
+          
+    </script>
+
+    </head>
+
+<body>
+
+    <my-app>
+        
+        <p>Loading AppComponent</p>
+        
+        <p>This may take a moment when using systemjs & loading dependencies from unkpg.com</p>
+        
+    </my-app>
+
+</body>
+
+</html>
